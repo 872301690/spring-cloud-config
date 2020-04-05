@@ -1,0 +1,15 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: spring-cloud-fegin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+# 开启熔断策略
+feign:
+  hystrix:
+    enabled: true
